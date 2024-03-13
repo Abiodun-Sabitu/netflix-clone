@@ -16,6 +16,7 @@ const Input: React.FC<InputProps> = ({ id, type, label, value, onChange }) => {
         placeholder=" "
         type={type}
         value={value}
+        onChange={onChange}
         className="
   block
   rounded-md
@@ -34,7 +35,6 @@ const Input: React.FC<InputProps> = ({ id, type, label, value, onChange }) => {
       />
       <label
         htmlFor={id}
-        onChange={onChange}
         className="
         absolute
       text-zinc-400
